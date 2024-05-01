@@ -22,27 +22,82 @@ let palabras = [];
 function separarPalabras(string) {
     return palabras = string.split(' ');
 }
-console.log(separarPalabras("Hola Mundo"));
+// console.log(separarPalabras("Hola Mundo"));
 
 // 08 
 function repetirString(string, num) {
     return string.repeat(num);
 }
-console.log(repetirString("monja", 5));
+// console.log(repetirString("monja", 5));
 
 // 09 
-function esPrimo(number) {
-    if (number % 2 !== 0) {
-        return true;
-    } else {
-        return false;
-    }
+function esPrimo(num) {
+    return num % 2 !== 0;
 }
-console.log(esPrimo(13));
 
 // MEZCLANDO ARRAYS Y FUNCIONES
+
 // 10
-function ordenarArray(arrayNumeros) {
-    return sort.arrayNumeros;
+function ordenarArray(myArray) {
+    return myArray.sort(function (a, b) { return a - b });
 }
-console.log([2, 7, 3, 5]);
+
+
+/*
+// 11
+function obtenerPares() {
+    return
+}
+*/
+
+// ARRAYS
+
+// 15
+const arrayNumerosNeg = [0, -1, -2, -3, -4, -5, -6, -7, -8, -9];
+
+// 16
+const holaMundo = ['Hola', 'Mundo'];
+
+// 17 
+const loGuardoTodo = ['hola', 'que', 23, 42.33, 'tal'];
+
+// 18 
+const arrayDeArrays = [[756, 'nombre'], [225, 'apellido'], [298, 'direccion']];
+
+// FUNCIONES
+
+// 19
+function multiplicacion(num1, num2) {
+    return num1 * num2;
+}
+
+
+// 20
+function division(num1, num2) {
+    return num1 / num2;
+}
+
+// 21 
+function esPar(num) {
+    return num % 2 == 0;
+}
+
+// 22
+const arrayFunciones = [
+    function suma(num1, num2) {
+        return num1 + num2
+    },
+    function resta(num1, num2) {
+        return num1 - num2
+    },
+    function multiplicacion(num1, num2) {
+        return num1 * num2
+    },
+];
+
+// MEZCLANDO ARRAYS Y FUNCIONES
+
+// 23
+function ordenarArray2(myArray) {
+    return myArray.sort(function (a, b) { return b - a });
+}
